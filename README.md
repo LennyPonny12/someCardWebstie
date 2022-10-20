@@ -1,2 +1,0 @@
-# someCardWebstie
-FrontEnd Master
