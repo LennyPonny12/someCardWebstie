@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section-left">
+        <div class="card-one">
+          <div class="card-one-circles">
+            <span class="circle-1"></span>
+            <span class="circle-2"></span>
+          </div>
+          <div class="card-one-code">
+            <span class="card-code-1">0000 0000 0000 0000</span>
+          </div>
+          <div class="card-one-lower">
+            <span class="card-one-name">jane appleseed</span>
+            <span class="card-one-expirenece">
+              <span class="month">00</span>/<span class="year">00</span>
+            </span>
+          </div>
+        </div>
+        <div class="card-two">
+          <span class="card-two-code">000</span>
+        </div>
+      </section>
+      <section class="section-right">
+        <form class="form">
+          <div class="card-holder">
+            <div class="label-form">Cardholder Name</div>
+            <input
+              class="first-input nameu"
+              type="text"
+              placeholder="e.g. Jane Appleseed
+          "
+            />
+          </div>
+          <div class="card-number">
+            <div class="label-form">Card Number</div>
+            <input
+              maxlength="16"
+              class="first-input codeu"
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000
+          "
+            />
+          </div>
+          <div class="form-double">
+            <div class="date-form">
+              <label class="label-form"> Exp. Date (MM/YY)</label>
+              <div class="inputs-date">
+                <input
+                  type="text"
+                  maxlength="2"
+                  placeholder="MM"
+                  class="date-input mnt"
+                />
+                <input
+                  type="text"
+                  maxlength="2"
+                  placeholder="YY"
+                  class="date-input yer"
+                />
+              </div>
+            </div>
+            <div class="cvc">
+              <label class="label-form">CVC</label>
+              <input
+                maxlength="3"
+                placeholder="e.g. 123"
+                type="text"
+                class="date-input cvc-nput"
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn-confirm">Confrim</button>
+        </form>
+        <div class="complteet-state hidden">
+          <div class="mark">
+            <ion-icon class="mark-icon" name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="compltete-text-container">
+            <h2 class="complete-heading">THANK YOU!</h2>
+            <p class="compleye-p">We've added your card details</p>
+          </div>
+          <button class="btn-continue">Continue</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
